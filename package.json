@@ -1,0 +1,19 @@
+{
+  "name": "app-basic",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "build-and-watch": "webpack --progress --watch",
+    "build-for-prod": "webpack -p"
+  },
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "vote-api": "git+https://github.com/VoteOnEthereum/Vote-API.git"
+  },
+  "devDependencies": {
+    "webpack": "^2.2.1"
+  }
+}

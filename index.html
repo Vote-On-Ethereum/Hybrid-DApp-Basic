@@ -1,0 +1,66 @@
+<html>
+<head>
+  <title>Vote on Ethereum</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+  <script type="text/javascript" src="bundle.js"></script>
+  <script type="text/javascript">
+    window.onload = _ => {
+      App.loadPoll()
+    }
+  </script>
+
+<style>
+@-moz-keyframes spin {
+    from { -moz-transform: rotate(0deg); }
+    to { -moz-transform: rotate(360deg); }
+}
+@-webkit-keyframes spin {
+    from { -webkit-transform: rotate(0deg); }
+    to { -webkit-transform: rotate(360deg); }
+}
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+.glyphicon-refresh {
+    animation-name: spin;
+    animation-duration: 2000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+</style>
+
+</head>
+
+<body>
+
+  <div class="container">
+
+  <!-- <button class="btn btn-primary btn-lg" onclick="loadPoll()">Load the poll</button> -->
+  <!-- <button class="btn btn-warning btn-lg" onclick="createPoll()">Create a poll</button> -->
+    <br/>
+
+    <div class="jumbotron" style="text-align: center;">
+      <h1 id="question"></h1>
+      <div id="proposalsButtons"></div>
+      <!-- <h6>Contract address<br/><small id="address"></small></h6> -->
+      <h3>Vote as <input type="text" id="voterName" /> <small id="voterHash"></small></h1>
+      <br/>
+      <h3 id="loading" class="hidden"><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Send transaction to the blockchain...</h3>
+    </div>
+
+    <h3>Results <span id="numberOfVoteTotal" class="badge"></span></h3>
+    <ul class="list-group" id="proposalsResult"></ul>
+
+    <h3>Voters</h3>
+    <div class="table-responsive"><table class="table table-condensed" id="voters"></table></div>
+
+  </div>
+
+</body>
+
+</html>
