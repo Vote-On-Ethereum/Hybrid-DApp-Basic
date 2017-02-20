@@ -11,7 +11,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "vote-api": "git+https://github.com/VoteOnEthereum/Vote-API.git"
+    "vote-api": "git+https://github.com/Vote-On-Ethereum/Vote-API.git"
   },
   "devDependencies": {
     "webpack": "^2.2.1"
