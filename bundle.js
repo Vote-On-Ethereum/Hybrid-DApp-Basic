@@ -38537,11 +38537,11 @@ module.exports = transfer;
 let shajs = __webpack_require__(66)
 let _Vote = __webpack_require__(67)
 
-let contractAddress = "0x1b447d06ad6bca0b56ea17f92c7f1d7b338db2e9"
-let backupNodeURL = "http://localhost:8545"//"https://ropsten.infura.io/Lj2vodvPsj3lmvCy0Z1n" //"http://128.199.140.92:8545"
+let contractAddress = "0xd89208fd82e9ae16789891654fa092cbf55eba2d" //"0x1b447d06ad6bca0b56ea17f92c7f1d7b338db2e9"
+let backupNodeURL = "https://128.199.140.92" //"http://localhost:8545"//"https://ropsten.infura.io/Lj2vodvPsj3lmvCy0Z1n" //"http://128.199.140.92:8545"
 let signerURL = 'https://p07ckk3cb7.execute-api.us-east-1.amazonaws.com/dev/sign'
 let wallet = {
-  "public": "0x866dbd65b4eae31526303639b36d53fdbcd57a26"
+  "public": "0xBA26Dcdfd63447baA042e3968a376cE70D530F83" //"0x866dbd65b4eae31526303639b36d53fdbcd57a26"
 }
 
 let _vote = new _Vote({
