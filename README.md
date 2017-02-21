@@ -53,7 +53,7 @@ To serve the website over a local server, you can use [http-server](https://gith
 npm install -g http-server
 ```
 
-The navigate the root folder of the repo and execute:
+Then navigate the root folder of the repo and execute:
 
 ```console
 http-server
