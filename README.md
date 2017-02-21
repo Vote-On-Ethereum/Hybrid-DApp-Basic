@@ -1,6 +1,11 @@
-# App-Basic
+# Basic Hybrid DApp
 
-A basic frontend app that use the [Vote-API](https://github.com/Vote-On-Ethereum/Vote-API) and the [Signer on AWS Lambda](https://github.com/Vote-On-Ethereum/Signer-Aws-Lambda)
+A basic hybrid DApp that use the [Vote API contract](https://github.com/Vote-On-Ethereum/Vote-API) and the [Signer on AWS Lambda](https://github.com/Vote-On-Ethereum/Signer-Aws-Lambda)
+
+## Concept
+
+See the [Concept repository](https://github.com/Vote-On-Ethereum/Concept).
+
 
 ## Dependencies
 
