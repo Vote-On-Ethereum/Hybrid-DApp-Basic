@@ -32,7 +32,7 @@ let wallet = {
 ## Build
 
 ```console
-npm npm run build
+npm run build
 ```
 
 This will create the `bundle.js` file.
@@ -42,7 +42,7 @@ This will create the `bundle.js` file.
 Same as build but will rebuild when modification occure to the JS files.
 
 ```console
-npm npm run build-and-watch
+npm run build-and-watch
 ```
 
 ## Serve
