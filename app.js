@@ -4,7 +4,7 @@ let shajs = require('sha.js')
 let _Vote = require('vote-api')
 
 let contractAddress = "0xd89208fd82e9ae16789891654fa092cbf55eba2d"
-let backupNodeURL = "https://128.199.140.92"
+let backupNodeURL = "https://1.test.node.ethaas.io"
 let signerURL = 'https://p07ckk3cb7.execute-api.us-east-1.amazonaws.com/dev/sign'
 let wallet = {
   "public": "0xBA26Dcdfd63447baA042e3968a376cE70D530F83"
@@ -158,7 +158,7 @@ let vote = proposal => {
   if (voterName.length == 0) {
     return window.alert("Voter name empty")
   }
-  let voterHash = "0x" + shajs('sha256').update(voterName, 'utf8').digest('hex') //@todo: improve
+  let voterHash = "0x" + shajs('sha256').update(voterName, 'utf8').digest('hex')
   document.getElementById('voterHash').innerHTML = voterHash
   // return voteByServer(voterHash, proposal)
   return voteByLocal(voterHash, proposal)
